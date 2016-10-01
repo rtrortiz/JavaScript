@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript and jQuery Image Slider</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+<center>
+<div class="container">
+	<div class="header"><h2>JavaScript and jQuery Image Slider</h2></div>
+	<p></p>
+	<button id="prev">Prev</button>
+	<button id="next">Next</button>
+
+
+<div id="slider">
+
+<li><img src="images/image1.jpg"></li>
+<li><img src="images/image2.jpg"></li>
+<li><img src="images/image3.jpg"></li>
+<li><img src="images/image4.jpg"></li>
+</div>
+
+<ul id="navigation">
+
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+
+</ul>
+
+</div><!--end of container-->
+</center>
+ 
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

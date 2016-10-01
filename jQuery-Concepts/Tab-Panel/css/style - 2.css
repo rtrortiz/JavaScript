@@ -1,0 +1,99 @@
+﻿
+
+.container {
+  /*border: 1px solid blue;*/
+}
+.col-xs-6 {
+  
+}
+.col-xs-3 {
+  /*border: 1px solid blue;*/
+   background-color: #2d9dd4;
+}
+.panel2{
+   background-color: #2d9dd4;
+  
+}
+#time {
+  text-align: right;
+}
+#time h1{
+  color: #fff;
+  font-size: 46px;
+}
+.panel-heading h1{
+	width: 320px;
+	/*border: 1px solid red;*/
+}
+#time-span {
+	/*margin-top: 0;*/
+	/*border: 1px solid red;*/
+	float: right;
+}
+#time-span p{
+	font-size: 48px;
+}
+#weather {
+	/*border: 1px solid red;*/
+}
+#date {
+	/*margin-top: 0;
+	padding: 0;*/
+	/*border: 1px solid red;*/
+	float: right;
+}
+
+#temp {
+	font-size: 48px;
+}
+#date-current{
+	font-size: 16px;
+}
+#humiditity {
+	/*margin-top: 0;
+	padding: 0;*/
+	/*border: 1px solid red;*/
+}
+
+/*****************************************************************/
+#weather-panel {
+	height: 100px;
+	width: 600px;
+	/*border: 1px solid red;*/
+	background-color: #2d9dd4;
+	color: #fff;
+	border-radius: 5px 5px 0px 0px;
+	
+}
+#header {
+	height: 100px;
+	width: 600px;
+	/*border: 1px solid red;*/
+	padding-left: 12px;
+	padding-right: 12px;
+	/*padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 0px;*/
+}
+#time-header {
+	float: right;
+	font-size: 52px;
+}
+#humidity  {
+	/*font-size: 14px;*/
+}
+#condition {
+	font-size: 18px;
+}
+/*******************************************************/
+#info {
+	/*border: 1px solid red;*/
+	float: right;
+	width: 199px;
+}
+#p-body {
+	height: 166px;
+	width: 600px;
+	border-radius: 0px 0px 5px 5px;
+	border: 1px solid #e5e5e5;
+}

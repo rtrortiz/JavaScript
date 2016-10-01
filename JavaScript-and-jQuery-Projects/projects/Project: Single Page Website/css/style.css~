@@ -1,0 +1,61 @@
+
+nav a {
+
+	text-decoration: none;
+	padding: 15px 25px;
+	border: 1px solid #fff;
+	background-color: #69d2e7;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 7px;
+
+
+}
+
+nav ul {
+
+	display: block;
+
+
+
+}
+
+nav li {
+
+	display: inline-block;
+
+
+}
+
+li {
+
+
+	list-style: none;
+	float: left;
+
+
+}
+
+nav a:hover {
+
+	border-color: #69d2e7;
+	background-color: #fff;
+	color: #69d2e7;
+
+
+
+}
+
+
+
+#contentContainer .panel {/*styling for all tabs*/
+  display: none;
+  background: #c9c9c9;
+  padding: 30px;
+  padding-top: 70px;
+  border-radius: 0 0 10px 10px;
+  height: 600px;
+}
+#contentContainer .panel.active {/*reveals tab that was hidden until user clicked its tab to reveal it and this class is added using js or jquery*/
+  display: block;
+}

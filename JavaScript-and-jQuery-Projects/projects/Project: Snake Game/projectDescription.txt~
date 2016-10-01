@@ -1,0 +1,6 @@
+Project Name: jQuery and the DOM
+
+I created a game called the Snake game which is based on a pre-existing game.
+The player has to move a snake around the board and it grows longer with each
+piece of food it eats. The player loses if it gets so big it hits itself or if it goes
+off the board.

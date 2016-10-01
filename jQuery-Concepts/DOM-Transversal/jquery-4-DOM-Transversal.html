@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+
+
+    <style>
+    	.special {
+    		color: blue;
+    	}
+    </style>
+
+</head>
+<body>
+
+<ul class="list">
+	<li>one</li>
+	<li class="special">two</li>
+	<li>three</li>
+	<li>
+		<ul class="sublist">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+	</li>
+</ul>
+
+	
+
+
+
+
+<script>
+
+$('li').first();//view first 'li' tag//result is viewed in the js console
+$('li').last();//view last 'li' tag//result is viewed in the js console
+$('li').first().hide();
+$('li').eq(0);//use index to access an 'li'
+$('ul:first').children();//all its children
+$(".special").siblings();
+$('ul:first').parent();//all its children
+$('li').eq(4).parent();
+$('li').eq(4).parent().parent().prev();
+$('li').eq(4).parent().parent().prev().next();
+	//$(document).ready(function(){		
+	//});
+
+	//$(function(){		
+	//});
+
+	$(document).ready(function(){
+		$('li').on('click', function(){
+			//$(this).next().hide();
+			//$(this).next().remove();
+			//$(this).siblings().remove();
+			//$(this).siblings().removeClass('special');
+			////Adding class//
+			//$(this).siblings().addClass('special');
+			//$(this).parent().addClass('special');
+			//$(this).closest('.list').addClass('special');//searches for class with a name of 'list'
+			//$(this).find('li').addClass('special');
+			//$(this).find('li').filter(':first').addClass('special');
+			//$(this).find('li').filter('.special').remove();
+			//$(this).find('.special').remove();
+
+			//$(this).hide();
+			//if( $(this).is('.special')){
+				//alert('special');
+			//}
+
+			$('li').on('click', function(){
+				//only listening to 'li' tags in the sublist
+				console.log('clicked li');
+				if ($(this).parent().is('.sublist')) {
+				$(this).hide();
+
+			}
+			
+			});
+
+			//$('.sublist li').on('click', function(){
+				//only listening to 'li' tags in the sublist
+
+				//if ($(this).parent().is('.sublist')) {
+				//$(this).hide();
+
+			//}
+
+			//})
+
+			});
+    });
+
+</script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="js/bootstrap.js">
+   
+
+
+</body>
+
+</html>

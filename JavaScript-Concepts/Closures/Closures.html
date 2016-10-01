@@ -1,0 +1,32 @@
+﻿
+
+<html>
+<body>
+
+<script>
+
+//Whenever you have a nested function within a function, you have a closure
+//the inner function can access the outer function's variables and it's parameters
+
+function  addNumbers(firstNumber, secondNumber){
+
+	var returnValue = "Result is : ";
+
+	function add(){
+
+		return returnValue + (firstNumber + secondNumber);//inner function accesses the outer function's 'returnValue' variable and its firstNumber and secondNumber parameters
+
+	}
+	return add();
+}
+
+var result = addNumbers(10, 20);
+//var myFunc = addNumbers(10, 20);
+//var result = myFunc();
+document.write(result);
+
+
+</script>
+
+</body>
+</html>

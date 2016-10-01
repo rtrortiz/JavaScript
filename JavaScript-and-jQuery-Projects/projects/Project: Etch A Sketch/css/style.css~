@@ -1,0 +1,31 @@
+div {
+  display: block;
+}
+
+
+#buttonContainer {
+
+  margin-top: 20px;
+
+
+}
+
+.grid_square {
+  background-color: black;
+  float: left;
+  border: 1px solid white;
+}
+
+.grid_square_lit {
+  background-color: red;
+}
+
+.new_row {
+  clear: both;
+}
+
+#grid_container {
+  overflow: auto;
+  width: 960px;
+  margin: auto;
+}

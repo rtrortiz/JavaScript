@@ -1,0 +1,56 @@
+﻿
+
+<html>
+<body>
+
+<script>
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//-Avoiding Polluting the Global Scope-Namespaces
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//--Problem--
+//--when you find yourself using multiple if, else if, else statements refractor your code using a switch statement
+
+//Before//
+var userInput = Number(prompt("Please enter a number", ""));
+
+if(userInput == 1){
+
+  alert("You number is One");
+
+} else if (userInput == 2){
+
+  alert("Your number is Two");
+
+}  else if (userInput == 3){
+
+  alert("Your number is Three");
+  
+}  else {
+
+  alert("Your number is not between 1 and 3");
+  
+}
+
+//After//Switch statement-refactored code
+var userInput = Number(prompt("Please enter a number", ""));
+
+switch(userInput){
+  case 1:
+   alert("You number is One");
+   break;
+  case 2:
+   alert("You number is Two");
+   break;
+  case 3:
+   alert("You number is Three");
+   break;
+  default:
+   alert("Your number is not between 1 and 3");
+   break;
+}
+
+
+</script>
+
+</body>
+</html>

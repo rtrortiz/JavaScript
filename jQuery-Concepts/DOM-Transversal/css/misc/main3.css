@@ -1,0 +1,883 @@
+/*@import url(http://fonts.googleapis.com/css?family=Archivo+Narrow);*/
+/*
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+h1,
+.h1 {
+  font-size: 36px;
+}
+h2,
+.h2 {
+  font-size: 30px;
+}
+h3,
+.h3 {
+  font-size: 24px;
+}
+h4,
+.h4 {
+  font-size: 18px;
+}
+h5,
+.h5 {
+  font-size: 14px;
+}
+h6,
+.h6 {
+  font-size: 12px;
+}
+/********************************************************************************/
+
+/*
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+*/
+
+.col-lg-6 {
+  border:1px solid red;
+  padding-left: 270px;
+}
+
+#busCards {
+  border:1px solid blue;
+}
+
+
+#nav {
+	background-color: #16759c;
+}
+
+#header1 {
+	margin-top:12px;
+  /*border:1px solid red;*/
+}
+
+#header1 h3 {
+	color:#FFF;
+	font-family: arial,sans-serif;
+ /* border:1px solid red;*/
+}
+
+#nav2 {
+	background-color: #fff;
+  /*border:1px solid red;*/
+}
+
+#header2 {
+	margin-top:12px;
+  /*border:1px solid red;*/
+}
+
+#header2 h3 {
+	color:#FFF;
+	font-family: arial,sans-serif;
+  /*border:1px solid red;*/
+}
+
+#footer {
+  height:100px;
+  padding-top:68px;
+  /*border:1px solid red;*/
+}
+
+img {
+
+	width:100%;
+  margin-bottom:12px;
+ 
+  /*border:1px solid red;*/
+  /*padding-left:14px;*/
+}
+
+.col-md-12 img {
+
+  width:40%;
+  margin-bottom:12px;
+  border:4px solid #DDDDDD;
+  /*border:1px solid red;*/
+  /*padding-left:14px;*/
+}
+
+#mainHeader h3 {
+  font-size: 32px;
+  /*border:1px solid red;*/
+
+
+}
+
+#mainHeader {
+  padding-left: 8px;
+  /*border:1px solid red;*/
+}
+
+#PartsResume {
+  width: 800px;
+
+  border:1px solid #DDDDDD;
+  margin-left:206px;
+  margin-bottom:32px;
+   margin-top:18px;
+}
+
+#PartsResume2 {
+  width: 800px;
+
+  border:1px solid #DDDDDD;
+  margin-left:206px;
+  margin-bottom:32px;
+   margin-top:18px;
+
+}
+
+
+
+#box1 {
+
+  border:1px solid #DDDDDD;
+  width: 400px;
+  padding-left:90px;
+  margin-bottom:20px;
+  margin-left:200px;
+  margin-top:16px;
+}
+
+#box1 h4 {
+  padding-left:50px;
+}
+
+#box2 {
+
+ border:1px solid #DDDDDD;
+  width: 400px;
+  padding-left:90px;
+  margin-bottom:20px;
+  margin-left:200px;
+}
+
+#box2 h4 {
+  padding-left:50px;
+}
+
+#box3 {
+
+  border:1px solid #DDDDDD;
+  width: 400px;
+  padding-left:90px;
+  margin-bottom:20px;
+  margin-left:200px;
+}
+
+#box3 h4 {
+  padding-left:50px;
+}
+
+#box4 {
+
+  border:1px solid #DDDDDD;
+  width: 400px;
+  padding-left:90px;
+  margin-bottom:20px;
+  margin-left:200px;
+}
+
+#box4 h4 {
+  padding-left:50px;
+}
+
+
+/*************************************************/
+#box4b {
+
+  border:1px solid #DDDDDD;
+  width: 400px;
+  padding-left:60px;
+  margin-bottom:20px;
+  margin-left:200px;
+}
+
+#box4b h4 {
+  padding-left:50px;
+}
+
+#box4c {
+
+  border:1px solid #DDDDDD;
+  width: 400px;
+  padding-left:40px;
+   padding-right:40px;
+  margin-bottom:20px;
+  margin-left:200px;
+
+}
+
+#box4c h4 {
+  padding-left:50px;
+}
+
+
+#subBox4 {
+padding-left:0px;
+margin-right:90px;
+/*border:1px solid red;*/
+
+}
+
+/*************************************************/
+#subBox4b {
+padding-left:2px;
+margin-left:18px;
+
+/*border:1px solid red;*/
+}
+/*************************************************/
+#box5 {
+
+  border:1px solid #DDDDDD;
+  width: 400px;
+  padding-left:90px;
+  margin-bottom:20px;
+  margin-left:200px;
+}
+
+#box5 h4 {
+  padding-left:50px;
+}
+
+#resume1 {
+  width:800px;
+  height:1076px;
+  padding-left:28px;
+  padding-right:28px;
+  padding-top:28px;
+  margin-bottom:76px;
+  margin-left:260px;
+  margin-top:18px;
+  border:1px solid #DDDDDD;
+}
+
+#resume2 {
+  width:800px;
+  height:1240px;
+  padding-left:28px;
+  padding-top:28px;
+  margin-bottom:92px;
+  margin-left:260px;
+  margin-top:18px;
+  border:1px solid #DDDDDD;
+}
+
+#script1 {
+  width:800px;
+  height:860px;
+  padding-left:28px;
+  padding-top:28px;
+  margin-bottom:92px;
+  margin-left:260px;
+  margin-top:18px;
+  border:1px solid #DDDDDD;
+}
+
+#script2 {
+  width:800px;
+  height:720px;
+  padding-left:28px;
+  padding-top:28px;
+  margin-bottom:92px;
+  margin-left:260px;
+  margin-top:18px;
+  border:1px solid #DDDDDD;
+}
+
+#script3 {
+  width:800px;
+  height:220px;
+  padding-left:28px;
+   padding-right:32px;
+  padding-top:28px;
+  margin-bottom:32px;
+  margin-left:260px;
+  margin-top:18px;
+  border:1px solid #DDDDDD;
+}
+
+#script4 {
+  width:800px;
+  height:220px;
+  padding-left:28px;
+   padding-right:32px;
+  padding-top:28px;
+  margin-bottom:32px;
+  margin-left:260px;
+  margin-top:18px;
+  border:1px solid #DDDDDD;
+}
+
+#script5 {
+  width:800px;
+  height:186px;
+  padding-left:28px;
+   padding-right:32px;
+  padding-top:28px;
+  margin-bottom:32px;
+  margin-left:260px;
+  margin-top:18px;
+  border:1px solid #DDDDDD;
+}
+
+#script6 {
+  width:800px;
+  height:186px;
+  padding-left:28px;
+   padding-right:32px;
+  padding-top:28px;
+  margin-bottom:32px;
+  margin-left:260px;
+  margin-top:18px;
+  border:1px solid #DDDDDD;
+}
+
+#script7 {
+  width:800px;
+  height:186px;
+  padding-left:28px;
+   padding-right:32px;
+  padding-top:30px;
+  margin-bottom:32px;
+  margin-left:260px;
+  margin-top:18px;
+  border:1px solid #DDDDDD;
+}
+
+#explanation {
+  width:800px;
+  height:246px;
+  padding-left:28px;
+   padding-right:32px;
+  padding-top:28px;
+  margin-bottom:32px;
+  margin-left:260px;
+  margin-top:18px;
+  border:1px solid #DDDDDD;
+}
+
+#explanation2 {
+  width:800px;
+  height:262px;
+  padding-left:28px;
+   padding-right:32px;
+  padding-top:28px;
+  margin-bottom:32px;
+  margin-left:260px;
+  margin-top:18px;
+  border:1px solid #DDDDDD;
+}
+
+#explanation3 {
+  width:800px;
+  height:298px;
+  padding-left:28px;
+   padding-right:32px;
+  padding-top:28px;
+  margin-bottom:32px;
+  margin-left:260px;
+  margin-top:18px;
+  border:1px solid #DDDDDD;
+}
+
+#explanation4 {
+  width:800px;
+  height:298px;
+  padding-left:28px;
+   padding-right:32px;
+  padding-top:28px;
+  margin-bottom:32px;
+  margin-left:260px;
+  margin-top:18px;
+  border:1px solid #DDDDDD;
+}
+
+#explanation5 {
+  width:800px;
+  height:280px;
+  padding-left:28px;
+   padding-right:32px;
+  padding-top:28px;
+  margin-bottom:32px;
+  margin-left:260px;
+  margin-top:18px;
+  border:1px solid #DDDDDD;
+}
+
+#PartsOfThankYouLetter {
+  width:800px;
+  height:468px;
+  padding-left:28px;
+   padding-right:32px;
+  padding-top:28px;
+  margin-bottom:32px;
+  margin-left:260px;
+  margin-top:18px;
+  border:1px solid #DDDDDD;
+}
+
+#SampleThankYouLetter {
+  width:800px;
+  height:428px;
+  padding-left:28px;
+   padding-right:32px;
+  padding-top:28px;
+  margin-bottom:32px;
+  margin-left:260px;
+  margin-top:18px;
+  border:1px solid #DDDDDD;
+}
+
+#SampleThankYouLetter2 {
+  width:800px;
+  height:290px;
+  padding-left:28px;
+   padding-right:32px;
+  padding-top:28px;
+  margin-bottom:32px;
+  margin-left:260px;
+  margin-top:18px;
+  border:1px solid #DDDDDD;
+}
+
+#CoverLetter {
+  width:800px;
+  height:370px;
+  padding-left:28px;
+   padding-right:32px;
+  padding-top:28px;
+  margin-bottom:92px;
+  margin-left:260px;
+  margin-top:18px;
+  border:1px solid #DDDDDD;
+}
+
+#ThankyouLetter {
+  width:800px;
+  height:410px;
+  padding-left:28px;
+   padding-right:32px;
+  padding-top:28px;
+  margin-bottom:92px;
+  margin-left:260px;
+  margin-top:18px;
+  border:1px solid #DDDDDD;
+}
+
+
+/*@media (max-width: 767px) {*/
+
+@media (max-width: 930px) {  
+
+   #box1 {
+
+  border:1px solid #DDDDDD;
+  width: 266px;
+  padding-left:2px;
+  margin-bottom:20px;
+  margin-left:8px;
+}
+
+   #box2 {
+
+  border:1px solid #DDDDDD;
+  width: 266px;
+  padding-left:2px;
+  margin-bottom:20px;
+  margin-left:8px;
+}
+
+   #box3 {
+
+  border:1px solid #DDDDDD;
+  width: 266px;
+  padding-left:2px;
+  margin-bottom:20px;
+  margin-left:8px;
+}
+
+#box4 {
+
+  border:1px solid #DDDDDD;
+  width: 266px;
+  padding-left:2px;
+  margin-bottom:20px;
+  margin-left:8px;
+
+}
+
+#box4b {
+
+  border:1px solid #DDDDDD;
+  width: 266px;
+  padding-left:2px;
+  margin-bottom:20px;
+  margin-left:8px;
+
+}
+
+#box4c {
+
+  border:1px solid #DDDDDD;
+  width: 266px;
+  padding-left:2px;
+  margin-bottom:20px;
+  margin-left:8px;
+
+}
+
+#box4 h5 {
+  padding-left:8px;
+}
+
+
+
+
+#subBox4 {
+padding-left:28px;
+margin-left:8px;
+/*border: 1px solid red;*/
+
+}
+
+#subBox4b {
+padding-left:16px;
+padding-right:2px;
+margin-left:8px;
+/*border: 1px solid red;*/
+
+}
+
+
+  #box5 {
+
+  border:1px solid #DDDDDD;
+  width: 266px;
+  padding-left:2px;
+  margin-bottom:20px;
+  margin-left:8px;
+}
+
+
+
+
+
+#PartsResume {
+ width: 288px;
+ margin-left:56px;
+  
+  
+}
+
+#resume1 {
+ /*width:800px;*/
+  width: 318px;
+  height:1630px;
+  margin-left:42px;
+  margin-top:18px;
+  padding-left:10px;
+  border:1px solid #DDDDDD;
+}
+
+#resume2 {
+ /*width:800px;*/
+  width: 360px;
+  height:1870px;
+  margin-left:12px;
+  margin-top:18px;
+  padding-left:12px;
+  padding-right:12px;
+  border:1px solid #DDDDDD;
+}
+
+#script1 {
+ /*width:800px;*/
+  /*width: 318px;*/
+
+   width: 360px;
+
+  height:1340px;
+  margin-left:12px;
+
+  /*margin-left:36px;*/
+  margin-top:18px;
+  padding-left:10px;
+  padding-right:10px;
+  border:1px solid #DDDDDD;
+}
+
+#script2 {
+ /*width:800px;*/
+  /*width: 324px;*/
+
+  width: 360px;
+  height:1200px;
+  margin-left:12px;
+  padding-right:10px;
+  margin-top:18px;
+  padding-left:10px;
+  border:1px solid #DDDDDD;
+}
+
+#script3 {
+   width: 360px;
+
+  height:380px;
+  margin-left:12px;
+  margin-top:18px;
+   margin-bottom:24px;
+  padding-left:18px;
+  padding-right:18px;
+  border:1px solid #DDDDDD;
+}
+
+#script4 {
+   width: 360px;
+
+  height:344px;
+  margin-left:12px;
+  margin-top:18px;
+   margin-bottom:24px;
+  padding-left:18px;
+  padding-right:18px;
+  border:1px solid #DDDDDD;
+}
+
+#script5 {
+   width: 360px;
+
+  height:300px;
+  margin-left:12px;
+  margin-top:18px;
+   margin-bottom:24px;
+  padding-left:18px;
+  padding-right:18px;
+  border:1px solid #DDDDDD;
+}
+
+#script6 {
+   width: 360px;
+
+  height:280px;
+  margin-left:12px;
+  margin-top:18px;
+   margin-bottom:24px;
+  padding-left:18px;
+  padding-right:18px;
+  border:1px solid #DDDDDD;
+}
+
+#script7 {
+   width: 360px;
+
+  height:264px;
+  margin-left:12px;
+  margin-top:18px;
+   margin-bottom:24px;
+  padding-left:18px;
+  padding-right:18px;
+  border:1px solid #DDDDDD;
+}
+
+#explanation {
+  width: 360px;
+
+  height:428px;
+  margin-left:12px;
+  margin-top:18px;
+  padding-left:18px;
+  padding-right:18px;
+  border:1px solid #DDDDDD;
+}
+
+
+
+#explanation2 {
+  width: 360px;
+
+  height:480px;
+  margin-left:12px;
+  margin-top:18px;
+  padding-left:18px;
+  padding-right:18px;
+  border:1px solid #DDDDDD;
+}
+
+#explanation3 {
+  width: 360px;
+
+  height:540px;
+  margin-left:12px;
+  margin-top:18px;
+  padding-left:18px;
+  padding-right:18px;
+  border:1px solid #DDDDDD;
+}
+
+#explanation4 {
+  width: 360px;
+
+  height:560px;
+  margin-left:12px;
+  margin-top:18px;
+  padding-left:18px;
+  padding-right:18px;
+  border:1px solid #DDDDDD;
+}
+
+#explanation5 {
+  width: 360px;
+
+  height:540px;
+  margin-left:12px;
+  margin-top:18px;
+  padding-left:18px;
+  padding-right:18px;
+  border:1px solid #DDDDDD;
+}
+
+#PartsOfThankYouLetter {
+  width: 360px;
+
+  height:648px;
+  margin-left:12px;
+  margin-top:18px;
+  padding-left:18px;
+  padding-right:18px;
+  border:1px solid #DDDDDD;
+}
+
+#SampleThankYouLetter {
+  width: 360px;
+
+  height:698px;
+  margin-left:12px;
+  margin-top:18px;
+  padding-left:18px;
+  padding-right:18px;
+  border:1px solid #DDDDDD;
+}
+
+#SampleThankYouLetter2 {
+  width: 360px;
+
+  height:394px;
+  margin-left:12px;
+  margin-top:18px;
+  padding-left:18px;
+  padding-right:18px;
+  border:1px solid #DDDDDD;
+}
+
+
+#CoverLetter {
+ /*width:800px;*/
+  width: 318px;
+  height:640px;
+  margin-left:12px;
+  margin-top:18px;
+  padding-left:18px;
+   padding-right:18px;
+  border:1px solid #DDDDDD;
+}
+
+#ThankyouLetter {
+ /*width:800px;*/
+  /*width: 318px;*/
+
+  width: 360px;
+
+  height:720px;
+  margin-left:12px;
+  margin-top:18px;
+  padding-left:18px;
+  padding-right:18px;
+  border:1px solid #DDDDDD;
+}
+
+.col-lg-6 {
+  border:1px solid red;
+  padding-left: 0;
+  /*padding-left: 270px;*/
+}
+
+#busCards {
+  border:1px solid blue;
+}
+
+.col-md-12 img {
+
+ width:100%;
+  margin-bottom:12px;
+  border:4px solid #DDDDDD;
+  /*border:1px solid red;*/
+  /*padding-left:14px;*/
+}
+
+.col-lg-12 img {
+width:234%;
+
+}
+
+body {
+  margin-top: 60px;
+}
+
+
+
+}
+

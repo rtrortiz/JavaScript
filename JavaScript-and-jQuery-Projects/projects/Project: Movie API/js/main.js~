@@ -1,0 +1,140 @@
+//Global for header and footer for the content views
+const head = '<div class="col-md-4 col-md-offset-4 well movie"><section>'
+const foot = '</section></div>'
+var results = 0;
+var totalResults = 0;
+
+//==================================================================================================
+
+
+//Initializes the hiding and showing of the loading picture upon ajax
+$(document).ready(function(){
+
+
+	var searching = false;
+
+	//Logic which shows and hides the loading div with loading pic based on ajax calls
+	$('.loading').hide();
+	$(document).ajaxStart(function(){
+
+		searching = true;
+		$('.loading').show();
+
+	}).ajaxStop(function(){
+
+	    	searching = false;
+	        $('.loading').hide();
+
+
+	});
+
+})
+
+//==================================================================================================
+
+//On submit of value, will perform the ajax search
+$('#moviesearch').click(function(){
+
+	$('.content').empty();
+	var results = 0;
+	totalResults = 0;
+	var title = document.getElementById('movieTitle').value;
+	//alert(title);
+	apiRequest.ajaxInfo(title);
+	return false;
+
+})
+
+//=============================================================================================
+// Functions
+// ============================================================================================
+
+var apiRequest = {
+
+	ajaxInfo: function(title){
+
+		//alert(title);
+
+	$.ajax({
+		// The Url for the request
+		url: "http://www.omdbapi.com/?s=" + title + "&r=json",// Searching movie by title
+		// Whether this is a POST or GET request
+		type: 'GET',
+    	        // The type of data we expect back
+		dataType: 'json',
+		// Code to run if the request succeeds;
+    	       // the response is passed to the function
+		success: function(json){
+
+			//console.log(json);//up to here
+			if(json.Response == 'False'){
+
+				var response = '<p>No movies found.</p>';
+				$('.content').append(head + response + foot);
+
+			}//end of if statement
+
+			  else {
+
+				//console.log(json);//up to here
+				this.createEntry(json);
+
+			  }//end of else statement
+
+		},
+
+    	// Code to run if the request fails; the raw request and
+    	// status codes are passed to the function
+		error: function(xhr, status, errorThrown){
+
+			alert("Sorry, there was a problem!");
+			console.log("Error:" + errorThrown);
+			console.log("Status:" + status);
+			console.dir(xhr);
+
+		},
+
+    	// Code to run regardless of success or failure
+		complete: function(xhr, staus){
+
+			console.log("The request is complete!");//works uo to here, works regardless
+
+		},
+
+
+		createEntry: function(data){
+
+			console.log(data);
+			$.each(data.Search, function(element){
+			
+				var title = this.Title;
+				var poster = this.Poster;
+				var type = this.Type;
+				var year = this.Year;
+				var imdbID = this.imdbID;
+
+
+				var header = '<header class="content-header">' + '<h2>' + title + '</h2>' + 
+				'<hr>' + '<p class="col-md-4"><strong>Year:</strong> <em>' + year + '</em></p>' + 
+				'<p class="col-md-4"><strong>Type:</strong> <em>' + type + '</em></p>' + 
+    				'<p class="col-md-4"><strong>Rating:</strong> <em>' + imdbID + '</em></p>'
+				'</header>';
+
+
+				
+				$('.content').append(head + header + foot);
+
+
+
+			});//end of each
+
+
+		}//end of createEntry
+
+	});
+
+
+     }
+
+};// end of apiRequest
+

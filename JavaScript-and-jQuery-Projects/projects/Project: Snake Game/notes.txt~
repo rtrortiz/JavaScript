@@ -1,0 +1,27 @@
+var arr = [];
+for(var i = 0;i<10;++i){
+  arr[i] = [];
+  for(var j = 0; j < 10; ++j){
+    arr[i][j] = "";
+  }
+}
+
+console.log(arr);
+
+Outputs:
+
+an array which contains a multidimensional array that holds 10 arrays and each array holds ten items/keys with an index of 0-9 and its values
+are empty--""--
+
+[ [],[],[],[],[],[],[],[],[],[] ]
+  0  1  2  3  4  5  6  7  8  9
+
+Then within each array they contain ten items
+
+Ex:
+
+[0: '', 1: '', 2: '', 3: '', 4: '', 5: '', 6: '', 7: '', 8: '', 9:'']
+
+
+
+arr[i][j] is the code to access each individual array and an item to each array which 'j' does

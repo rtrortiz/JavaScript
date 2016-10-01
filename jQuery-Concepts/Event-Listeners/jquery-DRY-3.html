@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+
+<script type="text/javascript" src="js/autoscroll.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+	<div class="jumbotron">
+		<h1>Listening to Events</h1>
+		<button class="panel-button" id="btn1" data-panelid="panel1">#btn1</button>
+		<button class="panel-button" id="btn2" data-panelid="panel2">#btn2</button>
+		<button class="panel-button" id="btn3" data-panelid="panel3">#btn3</button>
+	</div>
+</div>
+
+<div class="container">
+
+	<div class="col-xs-3">
+		<div id="panel1" class = "panel panel-primary">
+			<div class="panel-heading">#panel1 <button type="button" id="btn5" class="btn btn-default btn-xs">
+</button></div>
+				<div id="content" class="panel-body"> <a href="#">content</a></div>
+		</div>
+	</div>
+
+	<div class="col-xs-3">
+		<div id="panel2" class = "panel panel-primary">
+			<div class="panel-heading">#panel2</div>
+				<div class="panel-body"> content</div>
+		</div>
+	</div>
+
+	<div class="col-xs-3">
+		<div id="panel3" class = "panel panel-primary">
+			<div class="panel-heading">#panel3</div>
+				<div class="panel-body"> content</div>
+		</div>
+	</div>
+</div>
+
+	
+
+
+<link rel="stylesheet" href="js/bootstrap.js">
+
+<script>
+	//$(document).ready(function(){		
+	//});
+
+	//$(function(){		
+	//});
+
+	$(document).ready(function(){
+		//DRY//
+		//reuse a line of code to do the same action over again
+
+		//var content = "My Awesome content";
+
+		$(".panel-button").on("click", function(){
+
+			var panelId = $(this).attr("data-panelid");
+			//alert(panelId);
+			$("#"+panelId).slideToggle();
+
+			//$("#"+panelId+ ' .panel-body').html(content);
+		});
+	
+
+    });
+
+</script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+   
+
+
+</body>
+
+</html>

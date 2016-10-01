@@ -1,0 +1,51 @@
+﻿
+
+<html>
+<body>
+
+<script>
+
+var Employee = function(name){
+	this.name = name;
+}
+
+Employee.prototype.getName = function(){
+	return alert(this.name);
+}
+
+//add new function to the 'Employee' object, which will automatically updated the objects below that have an instance of this object
+//Prototype in JavaScript- using prototype prevents the creation of several copies of the function that is referenced by the protoype when several object are created. All object can just refer to the single protoype in order to access the function
+//functions are loaded only once into memory, even you create a 100 copies of the object, there will be only one 'getNameLength()' function
+Employee.prototype.getNameLength = function(){
+	return this.name.length;
+}
+
+//document.write(Employee.hasOwnProperty('getName'));//returns false -- Employee object does not own the function, but it only has a reference to it
+
+var PermanentEmployee = function(annualSalary){
+	this.annualSalary = annualSalary;
+}
+
+var employee = new Employee("Mark");//'employee' inherits from 'Employee'
+
+//employee.name = "James";
+
+//employee.getName();//'employee' now has access to 'Employee' getName() function
+
+PermanentEmployee.prototype = employee;//'employee' is now the parent of 'PermanentEmployee'
+
+var pe = new PermanentEmployee(5000);//'pe' inherits from PermanentEmpoyee which inherits from 'employee', which then inherits from 'Employee'
+
+//pe.getName();//'pe' can call the 'Employee' getNAme() function, through inheritance
+
+alert(pe instanceof Employee);//returns true
+alert(pe instanceof PermanentEmployee);//returns true
+alert(pe.getNameLength());//returns true
+
+document.write("employee.name: " + employee.hasOwnProperty('name')+ "<br/>");//outputs true
+document.write("employee.annualSalary: " + employee.hasOwnProperty('annualSalary')+ "<br/>");//outputs false
+document.write("PermanentEmployee.annualSalary: " + pe.hasOwnProperty('annualSalary')+ "<br/>");//outputs true
+</script>
+
+</body>
+</html>
